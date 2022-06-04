@@ -1,0 +1,18 @@
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Data Context.deps.json
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Data Context.runtimeconfig.json
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Data Context.runtimeconfig.dev.json
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Data Context.dll
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\ref\Data Context.dll
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Data Context.pdb
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Models.dll
+F:\gemini\work shop\Sports Website\Data Context\bin\Debug\net5.0\Models.pdb
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.csproj.AssemblyReference.cache
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.GeneratedMSBuildEditorConfig.editorconfig
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.AssemblyInfoInputs.cache
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.AssemblyInfo.cs
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.csproj.CoreCompileInputs.cache
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.csproj.CopyComplete
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.dll
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\ref\Data Context.dll
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.pdb
+F:\gemini\work shop\Sports Website\Data Context\obj\Debug\net5.0\Data Context.genruntimeconfig.cache

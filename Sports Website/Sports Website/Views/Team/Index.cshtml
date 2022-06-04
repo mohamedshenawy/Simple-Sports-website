@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@using Models
+@model List<Teams>
+    <style>
+
+        .profile-img {
+            width: 100px;
+        }
+    </style>
+
+<h1>Teams</h1>
+
+
+@Html.ActionLink("Add New Team" , "Create" , "Team" , null  , new{ @class="btn btn-primary m-3"})
+            
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">NO</th>
+            <th scope="col">Team Logo</th>
+            <th scope="col">Team Name</th>
+            <th scope="col">About Team</th>
+            <th scope="col">Website Url</th>
+            <th scope="col">Foundation Date</th>
+            <th scope="col">Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = 1;}
+        @foreach (var team in Model)
+        {
+        <tr>
+
+            <td>
+                @i
+            </td>
+            @{ i++;}
+
+            <td>
+                <img class="profile-img" src="~/Files/images/@team.LogoUrl" alt="Logo" />
+            </td>
+
+            <td>@team.Name</td>
+
+            <td>@team.Description</td>
+
+            <td>
+                <a target="_blank" href="@team.WebsiteUrl">click here</a>
+            </td>
+
+            <td>
+                @team.FoundationDate
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Team", routeValues: new { @teamID = team.ID }, new { @class = "btn btn-primary me-2" })
+                @Html.ActionLink("Delete", "Delete", "Team", routeValues: new { @teamID = team.ID }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+        }
+
+
+    </tbody>
+</table>
+

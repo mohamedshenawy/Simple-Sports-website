@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@using ViewModels
+@model TeamVM
+
+
+
+
+
+<div class="d-flex justify-content-center mt-4">
+
+    <form class="w-50 fm p-3" asp-action="Edit" asp-controller="Team" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <h1 class="text-center">Edit @Model.Name Team</h1>
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="">
+            @*<label for="exampleInputPassword1" class="form-label">Description</label>*@
+            @*<input type="number" class="form-control" disabled name="ID" asp-for="ID">*@
+            @Html.TextBoxFor(i => i.ID, new { disabled = "disabled", @class = "form-control" })
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Team Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="Name">
+        </div>
+        <div>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" asp-for="Description">
+        </div>
+        <div>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="">
+            <label for="exampleInputPassword1" class="form-label">Website Url</label>
+            <input type="text" class="form-control" asp-for="WebsiteUrl">
+        </div>
+        <div>
+            <span asp-validation-for="WebsiteUrl" class="text-danger"></span>
+        </div>
+
+        <div class="">
+            <label for="exampleInputPassword1" class="form-label">Team Logo</label>
+            <input type="file" class="form-control" asp-for="LogoFile">
+        </div>
+        <div>
+            <span asp-validation-for="LogoFile" class="text-danger"></span>
+        </div>
+
+        <div class="">
+            <label for="exampleInputPassword1" class="form-label">Foundation Date</label>
+            <input type="date" class="form-control" asp-for="FoundationDate">
+        </div>
+        <div>
+            <span asp-validation-for="FoundationDate" class="text-danger"></span>
+        </div>
+
+        <label for="cars">Select tournament:</label>
+        <div class="">
+            @Html.DropDownListFor(i => i.tournamentID, (IEnumerable
+    <SelectListItem>)ViewData["tournaments"])
+        </div>
+
+      
+
+
+        <button type="submit" class="btn btn-primary">Edit @Model.Name Team</button>
+
+
+    </form>
+</div>
+
+

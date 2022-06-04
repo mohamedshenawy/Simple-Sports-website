@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zXEvR0dsvZwXqaojroYsPTaVgsnxskbEGrLcMLgKI/zmGedfFz21s/7Cn+aIkwonJgtoD3Pg5A06mEhjdywX6w==",
+  "success": true,
+  "projectFilePath": "F:\\gemini\\work shop\\Sports Website\\ViewModels\\ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
