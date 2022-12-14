@@ -10,3 +10,15 @@ F:\gemini\work shop\Sports Website\Models\obj\Debug\net5.0\Models.csproj.CoreCom
 F:\gemini\work shop\Sports Website\Models\obj\Debug\net5.0\Models.dll
 F:\gemini\work shop\Sports Website\Models\obj\Debug\net5.0\ref\Models.dll
 F:\gemini\work shop\Sports Website\Models\obj\Debug\net5.0\Models.pdb
+F:\tech tech\SimpleSports\Sports Website\Models\bin\Debug\net5.0\Models.deps.json
+F:\tech tech\SimpleSports\Sports Website\Models\bin\Debug\net5.0\Models.dll
+F:\tech tech\SimpleSports\Sports Website\Models\bin\Debug\net5.0\Models.pdb
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.csproj.AssemblyReference.cache
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.AssemblyInfoInputs.cache
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.AssemblyInfo.cs
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.csproj.CoreCompileInputs.cache
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.dll
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\refint\Models.dll
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\Models.pdb
+F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net5.0\ref\Models.dll

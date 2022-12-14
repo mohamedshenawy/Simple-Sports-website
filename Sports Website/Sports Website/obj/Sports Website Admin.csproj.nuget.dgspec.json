@@ -1,35 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "F:\\gemini\\work shop\\Sports Website\\Sports Website\\Sports Website Admin.csproj": {}
+    "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\Sports Website Admin.csproj": {}
   },
   "projects": {
-    "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj": {
+    "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj",
+        "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj",
         "projectName": "Data Context",
-        "projectPath": "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj",
+        "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\gemini\\work shop\\Sports Website\\Data Context\\obj\\",
+        "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj"
               }
             }
           }
@@ -41,28 +41,28 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -71,7 +71,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,33 +81,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj": {
+    "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj",
+        "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj",
+        "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\gemini\\work shop\\Sports Website\\Models\\obj\\",
+        "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -117,15 +118,16 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -134,39 +136,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\gemini\\work shop\\Sports Website\\Repos\\Repos.csproj": {
+    "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\gemini\\work shop\\Sports Website\\Repos\\Repos.csproj",
+        "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj",
         "projectName": "Repos",
-        "projectPath": "F:\\gemini\\work shop\\Sports Website\\Repos\\Repos.csproj",
+        "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\gemini\\work shop\\Sports Website\\Repos\\obj\\",
+        "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj"
               },
-              "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj"
               }
             }
           }
@@ -178,8 +180,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
@@ -187,7 +189,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -196,7 +198,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -205,45 +208,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\gemini\\work shop\\Sports Website\\Sports Website\\Sports Website Admin.csproj": {
+    "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\Sports Website Admin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\gemini\\work shop\\Sports Website\\Sports Website\\Sports Website Admin.csproj",
+        "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\Sports Website Admin.csproj",
         "projectName": "Sports Website Admin",
-        "projectPath": "F:\\gemini\\work shop\\Sports Website\\Sports Website\\Sports Website Admin.csproj",
+        "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\Sports Website Admin.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\gemini\\work shop\\Sports Website\\Sports Website\\obj\\",
+        "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Data Context\\Data Context.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj"
               },
-              "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj"
               },
-              "F:\\gemini\\work shop\\Sports Website\\Repos\\Repos.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Repos\\Repos.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj"
               },
-              "F:\\gemini\\work shop\\Sports Website\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\ViewModels\\ViewModels.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -255,18 +258,18 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -275,7 +278,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -287,36 +291,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\gemini\\work shop\\Sports Website\\ViewModels\\ViewModels.csproj": {
+    "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\gemini\\work shop\\Sports Website\\ViewModels\\ViewModels.csproj",
+        "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj",
         "projectName": "ViewModels",
-        "projectPath": "F:\\gemini\\work shop\\Sports Website\\ViewModels\\ViewModels.csproj",
+        "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\gemini\\work shop\\Sports Website\\ViewModels\\obj\\",
+        "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj": {
-                "projectPath": "F:\\gemini\\work shop\\Sports Website\\Models\\Models.csproj"
+              "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
+                "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj"
               }
             }
           }
@@ -328,8 +332,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
@@ -342,7 +346,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -351,7 +356,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
