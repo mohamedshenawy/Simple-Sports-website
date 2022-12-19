@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Models;
 using Repos;
@@ -13,6 +14,7 @@ using ViewModels;
 
 namespace Sports_Website.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -29,8 +31,18 @@ namespace Sports_Website.Controllers
 
         public IActionResult Index()
         {
-            var tournaments = tournamentsRepo.Read().ToList();
-            return View(tournaments);
+            try
+            {
+                var tournaments = tournamentsRepo.Read().ToList();
+                return View(tournaments);
+
+            }
+            catch
+            {
+                //Sports_Website.Models.ErrorViewModel er = new ErrorViewModel();
+                
+                return View("Error");
+            }
         }
 
         public IActionResult Create()

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SzKmCjITyZvRl5NE2WRcC8vlTPyQALe7/DxRSbByl18=",
+  "Hash": "Z3qrW4lRZzL+tYOPSrvooVgF4uip4LeKUwm8RvVx+c8=",
   "Source": "Sports Website Admin",
   "BasePath": "_content/Sports Website Admin",
   "Mode": "Default",
@@ -372,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\images\\fca889a1-6d42-43eb-b9f0-64af826787cfLiverpool_FC.svg.png"
+    },
+    {
+      "Identity": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\wwwroot\\js\\Signup.js",
+      "SourceId": "Sports Website Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\wwwroot\\",
+      "BasePath": "_content/Sports Website Admin",
+      "RelativePath": "js/Signup.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Signup.js"
     },
     {
       "Identity": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\wwwroot\\js\\site.js",
