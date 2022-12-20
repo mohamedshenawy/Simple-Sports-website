@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
+using System.Security.Authentication;
 using System.Threading.Tasks;
 using ViewModels;
 
@@ -23,7 +25,17 @@ namespace Sports_Website.Controllers
         }
         [HttpGet]
         public IActionResult Login()
+        
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            string returnUrl = HttpContext.Request.Query["returnUrl"];
+            if (!String.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+            {
+                ViewBag.returnUrl = returnUrl; 
+            }
             return View();
         }
         [HttpPost]
@@ -34,13 +46,16 @@ namespace Sports_Website.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest();
 
-                //var user = new IdentityUser { UserName= model.UserName };
                 var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
                 if(!result.Succeeded)
                 {
                     return BadRequest("invalid email or password");
                 }
-
+                //return url
+                if (!String.IsNullOrEmpty(model.returnUrl) && Url.IsLocalUrl(model.returnUrl))
+                {
+                    return Redirect(model.returnUrl);
+                }
                 return RedirectToAction("Index", "Home");
             }
             catch(Exception e)
@@ -84,6 +99,24 @@ namespace Sports_Website.Controllers
                 return BadRequest();
             }
 
+        }
+
+        
+        public async Task<IActionResult> LogOut()
+        {
+            try
+            {
+                if (User.Identity.IsAuthenticated)
+                {
+                    await _signInManager.SignOutAsync();
+                    return RedirectToAction("Login");
+                }
+                return Unauthorized("not authorized");
+               
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
 

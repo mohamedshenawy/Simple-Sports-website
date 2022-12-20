@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model List<IdentityUser>
+@{
+    ViewData["Title"] = "User Manager";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">UserName</th>
+            <th scope="col">Email</th>
+            <th scope="col">User operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int counter = 1;}
+        @foreach (var user in Model)
+        {
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @Html.ActionLink("Edit" , "Index" , "UserManager" , null , new {@class="btn btn-primary"})
+                    @Html.ActionLink("delete" , "Index" , "UserManager" , null , new {@class="btn btn-danger"})
+                    @Html.ActionLink("rest password" , "Index" , "UserManager" , null , new {@class="btn btn-secondary"})
+                </td>
+                
+            </tr>
+            
+                counter++;
+            
+        }
+        
+    </tbody>
+</table>

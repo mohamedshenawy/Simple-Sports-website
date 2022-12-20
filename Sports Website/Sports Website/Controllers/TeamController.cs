@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Models;
 using Repos;
@@ -11,6 +12,7 @@ using ViewModels;
 
 namespace Sports_Website.Controllers
 {
+    [Authorize]
     public class TeamController : Controller
     {
 
