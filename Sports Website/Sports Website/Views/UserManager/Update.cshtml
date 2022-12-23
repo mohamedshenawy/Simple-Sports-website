@@ -1,0 +1,21 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityUser
+@{
+    ViewData["Title"] = "Update User";
+}
+<div class="m-5">
+    <div id="error-sammry">
+    </div>
+        <input type="text" hidden value="@Model.Id" class="form-control" id="Id"  aria-describedby="NameHelp">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="Name" value="@Model.UserName" aria-describedby="NameHelp">
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email address</label>
+        <input type="email" value="@Model.Email" class="form-control" id="Email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <button type="submit" onclick="UpdateUser()" class="btn btn-primary">Submit</button>
+</div>
+
+<script src="~/js/UserManager.js"></script>

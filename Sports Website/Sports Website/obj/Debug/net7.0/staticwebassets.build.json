@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z3qrW4lRZzL+tYOPSrvooVgF4uip4LeKUwm8RvVx+c8=",
+  "Hash": "0x4F71gT7kiQso8LKg7W4Kgz0qXZhNd1gwdTcdOxcOI=",
   "Source": "Sports Website Admin",
   "BasePath": "_content/Sports Website Admin",
   "Mode": "Default",
@@ -406,6 +406,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\wwwroot\\js\\UserManager.js",
+      "SourceId": "Sports Website Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\wwwroot\\",
+      "BasePath": "_content/Sports Website Admin",
+      "RelativePath": "js/UserManager.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\UserManager.js"
     },
     {
       "Identity": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

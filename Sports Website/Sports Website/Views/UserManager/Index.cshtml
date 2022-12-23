@@ -21,8 +21,8 @@
                 <td>@user.UserName</td>
                 <td>@user.Email</td>
                 <td>
-                    @Html.ActionLink("Edit" , "Index" , "UserManager" , null , new {@class="btn btn-primary"})
-                    @Html.ActionLink("delete" , "Index" , "UserManager" , null , new {@class="btn btn-danger"})
+                    @Html.ActionLink("Edit" ,"Update" , "UserManager" , routeValues:new {@userId=user.Id},new {@class="btn btn-primary"})
+                    @Html.ActionLink("delete" , "Delete" , "UserManager" , routeValues:new {@userId=user.Id} , new {@class="btn btn-danger"})
                     @Html.ActionLink("rest password" , "Index" , "UserManager" , null , new {@class="btn btn-secondary"})
                 </td>
                 
