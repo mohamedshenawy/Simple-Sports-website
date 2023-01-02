@@ -71,6 +71,22 @@ namespace Sports_Website.Controllers
             }
         }
         //delete
+        [HttpDelete]
+        public async Task<IActionResult> Delete(string userId)
+        {
+            try
+            {
+                var user = await _userManager.FindByIdAsync(userId);
+                var result = await _userManager.DeleteAsync(user);
+                if (!result.Succeeded)
+                    return BadRequest("falid delete");
+
+                return Ok("deleted");
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
     }
 }
