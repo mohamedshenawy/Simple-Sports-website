@@ -1,0 +1,13 @@
+﻿@using ViewModels;
+@model RoleVM
+@{
+    ViewData["title"] = "Insert Role";
+}
+
+<form method="post" asp-action="InsertRole" asp-controller="Roles" class="m-5">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name*</label>
+        <input type="text" asp-for="Name" class="form-control" id="Name" aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-primary me-1">Add</button>
+</form>

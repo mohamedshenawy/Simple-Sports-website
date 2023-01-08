@@ -13,5 +13,9 @@ namespace ViewModels
         [EmailAddress(ErrorMessage = "Emial not valid")]
         public string Email { get; set; }
 
+
+        [Required(ErrorMessage = "role is required")]
+        public string RoleId { get; set; }
+
     }
 }

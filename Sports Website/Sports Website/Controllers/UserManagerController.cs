@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.ContentModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,12 @@ namespace Sports_Website.Controllers
     public class UserManagerController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
-        public UserManagerController(UserManager<IdentityUser> userManager)
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public UserManagerController(UserManager<IdentityUser> userManager , RoleManager<IdentityRole> roleManager)
         {
             _userManager= userManager;
+            _roleManager = roleManager;
+
         }
         //read
         public async Task<IActionResult> Index()
@@ -39,8 +43,10 @@ namespace Sports_Website.Controllers
         {
             try
             {
-                //var user = _userManager.Users.Where(user => user.Id == userId).First();
+                ViewBag.Roles = _roleManager.Roles.ToList();
                 var user = await _userManager.FindByIdAsync(userId);
+                var userRole = (await _userManager.GetRolesAsync(user)).FirstOrDefault();
+                ViewBag.userRole = userRole;
                 return View(user);
 
             }catch(Exception e)
@@ -49,7 +55,7 @@ namespace Sports_Website.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> UpdateUser([FromBody]UpdateUserVM model)
+        public async Task<IActionResult> UpdateUser(UpdateUserVM model)
         {
             try
             {
@@ -62,9 +68,11 @@ namespace Sports_Website.Controllers
                 user.Email = model.Email;
                 user.NormalizedEmail = model.Email.ToUpper();
                 var result = await _userManager.UpdateAsync(user);
+                var role = await _roleManager.FindByIdAsync(model.RoleId);
+                await _userManager.AddToRoleAsync(user, role.Name);
                 if (!result.Succeeded)
                     return BadRequest("update user failed");
-                return View("Index",_userManager.Users);
+                return Content("/UserManager/Index");
             }catch(Exception e)
             {
                 return BadRequest(e.Message);
@@ -83,6 +91,25 @@ namespace Sports_Website.Controllers
 
                 return Ok("deleted");
             }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+
+        public async Task<IActionResult> RestPassword(string userId)
+        {
+            try
+            {
+                var user = await _userManager.FindByIdAsync(userId);
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var result = await _userManager.ResetPasswordAsync(user, code, "P@ssw0rd@123");
+                if (!result.Succeeded)
+                    return BadRequest("Error");
+
+                return Ok("done");
+            }
+            catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
