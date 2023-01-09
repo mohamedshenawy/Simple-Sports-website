@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using ViewModels;
 
 namespace Sports_Website.Controllers
 {
+    [Authorize(Roles ="super admin,admin")]
     public class RolesController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
