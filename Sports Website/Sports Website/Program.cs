@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Repos;
+using System;
 using System.IO;
 using ViewModels;
 
@@ -23,8 +24,17 @@ bulider.Services.AddAutoMapper(typeof(Program));
 bulider.Services.AddScoped<DbContext, Context>();
 bulider.Services.AddScoped(typeof(IModelRepo<>), typeof(ModelRepo<>));
 bulider.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
-bulider.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<Context>();
+bulider.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<Context>()
+    .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>(TokenOptions.DefaultProvider);
 bulider.Services.AddAuthorization();
+
+bulider.Services.ConfigureApplicationCookie(op =>
+{
+    op.Cookie.Name = "AspNetCore.Identity.Application";
+    op.ExpireTimeSpan = TimeSpan.FromDays(1);
+    op.SlidingExpiration = true;
+});
+                
 
 var app = bulider.Build();
 

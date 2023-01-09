@@ -13,7 +13,7 @@
         background-color: #f27474 !important;
     }
 </style>
-
+@Html.ActionLink("New User" , "Insert" , "UserManager" , null , new {@class="btn btn-primary"})
 <table class="table">
     <thead>
         <tr>
@@ -33,7 +33,7 @@
                 <th scope="row">@counter</th>
                 <td>@user.UserName</td>
                 <td>@user.Email</td>
-                <td>@((await _userManager.GetRolesAsync(user)).FirstOrDefault())</td>
+                <td>@((await _userManager.GetRolesAsync(user)).LastOrDefault())</td>
                 <td>
                     @Html.ActionLink("Edit" ,"Update" , "UserManager" , routeValues:new {@userId=user.Id},new {@class="btn btn-primary"})
                     <!-- Button trigger modal -->

@@ -64,42 +64,42 @@ namespace Sports_Website.Controllers
             }
         }
 
-        [HttpGet]
-        public IActionResult SignUp()
-        {
-            return View();
-        }
-        [HttpPost]
-        public async Task<IActionResult> SinUpPost(SignUpVM model)
-        {
-            try
-            {
-                // data annotation validation 
-                if(!ModelState.IsValid)
-                    return BadRequest(ModelState);
+        //[HttpGet]
+        //public IActionResult SignUp()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //public async Task<IActionResult> SinUpPost(SignUpVM model)
+        //{
+        //    try
+        //    {
+        //        // data annotation validation 
+        //        if(!ModelState.IsValid)
+        //            return BadRequest(ModelState);
 
-                //sign up with identity 
-                IdentityUser newUser = new IdentityUser();
-                newUser = _mapper.Map<IdentityUser>(model);
-                var result = await _userManager.CreateAsync(newUser, model.Password);
+        //        //sign up with identity 
+        //        IdentityUser newUser = new IdentityUser();
+        //        newUser = _mapper.Map<IdentityUser>(model);
+        //        var result = await _userManager.CreateAsync(newUser, model.Password);
 
-                if (!result.Succeeded)
-                {
-                    var errors = new List<string>();
-                    foreach (var error in result.Errors)
-                    {
-                        errors.Add(error.Description);
-                    }
-                    return BadRequest(errors);
-                }
-                return Ok(Url.Action("Index" , "Home"));
-            }
-            catch
-            {
-                return BadRequest();
-            }
+        //        if (!result.Succeeded)
+        //        {
+        //            var errors = new List<string>();
+        //            foreach (var error in result.Errors)
+        //            {
+        //                errors.Add(error.Description);
+        //            }
+        //            return BadRequest(errors);
+        //        }
+        //        return Ok(Url.Action("Index" , "Home"));
+        //    }
+        //    catch
+        //    {
+        //        return BadRequest();
+        //    }
 
-        }
+        //}
 
         
         public async Task<IActionResult> LogOut()

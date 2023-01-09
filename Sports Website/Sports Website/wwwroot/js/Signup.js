@@ -6,7 +6,7 @@ async function signUp() {
         return;
     }
     //ajax to controller
-    var ajaxUrl = window.location.origin.toString() + "/Account/SinUpPost";
+    var ajaxUrl = window.location.origin.toString() + "/UserManager/InsertUser";
     
     var ajaxoptions = {};
     ajaxoptions.url = ajaxUrl;

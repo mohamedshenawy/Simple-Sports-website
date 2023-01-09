@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,15 +12,17 @@ using ViewModels;
 
 namespace Sports_Website.Controllers
 {
-    [Authorize]
+    [Authorize(Roles= "super admin")]
     public class UserManagerController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        public UserManagerController(UserManager<IdentityUser> userManager , RoleManager<IdentityRole> roleManager)
+        private readonly IMapper _mapper;
+        public UserManagerController(UserManager<IdentityUser> userManager , RoleManager<IdentityRole> roleManager , IMapper mapper)
         {
             _userManager= userManager;
             _roleManager = roleManager;
+            _mapper= mapper;
 
         }
         //read
@@ -37,6 +40,42 @@ namespace Sports_Website.Controllers
             }
         }
         //insert
+        [HttpGet]
+        public IActionResult Insert()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> InsertUser(SignUpVM model)
+        {
+            try
+            {
+                // data annotation validation 
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                //sign up with identity 
+                IdentityUser newUser = new IdentityUser();
+                newUser = _mapper.Map<IdentityUser>(model);
+                var result = await _userManager.CreateAsync(newUser, model.Password);
+
+                if (!result.Succeeded)
+                {
+                    var errors = new List<string>();
+                    foreach (var error in result.Errors)
+                    {
+                        errors.Add(error.Description);
+                    }
+                    return BadRequest(errors);
+                }
+                return Ok(Url.Action("Index", "UserManager"));
+            }
+            catch
+            {
+                return BadRequest();
+            }
+
+        }
         //update
         [HttpGet]
         public async Task<IActionResult> Update(string userId)
