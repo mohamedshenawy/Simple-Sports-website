@@ -143,11 +143,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj",
+      "projectUniqueName": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\ViewModels\\ViewModels.csproj",
       "projectName": "ViewModels",
-      "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj",
+      "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\ViewModels\\ViewModels.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\obj\\",
+      "outputPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,8 +164,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
-              "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj"
+            "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\Models.csproj": {
+              "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\Models.csproj"
             }
           }
         }

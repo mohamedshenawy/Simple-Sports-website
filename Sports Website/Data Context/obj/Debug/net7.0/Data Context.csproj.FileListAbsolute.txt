@@ -15,3 +15,20 @@ F:\tech tech\SimpleSports\Sports Website\Data Context\obj\Debug\net7.0\refint\Da
 F:\tech tech\SimpleSports\Sports Website\Data Context\obj\Debug\net7.0\Data Context.pdb
 F:\tech tech\SimpleSports\Sports Website\Data Context\obj\Debug\net7.0\Data Context.genruntimeconfig.cache
 F:\tech tech\SimpleSports\Sports Website\Data Context\obj\Debug\net7.0\ref\Data Context.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\bin\Debug\net7.0\Data Context.deps.json
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\bin\Debug\net7.0\Data Context.runtimeconfig.json
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\bin\Debug\net7.0\Data Context.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\bin\Debug\net7.0\Data Context.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\bin\Debug\net7.0\Models.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\bin\Debug\net7.0\Models.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.csproj.AssemblyReference.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.AssemblyInfoInputs.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.AssemblyInfo.cs
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.csproj.CoreCompileInputs.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.csproj.CopyComplete
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\refint\Data Context.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\Data Context.genruntimeconfig.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Data Context\obj\Debug\net7.0\ref\Data Context.dll

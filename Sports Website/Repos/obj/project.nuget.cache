@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LNGZnpBXnGdhX+mLzJ24sBK7bZf1b2lLTvyEIeokJz2CSpMdWtLAavk1f/i/nRrukwPmLusF2txpNa1p5I7ydQ==",
+  "dgSpecHash": "aoPVlCYu1UkGP1+trH8it6aRZA1UvYetibPBsDs7m7X3ldTbBbkNDVATuW/AePBdLqLKZDSkXGuZxt0RoSvRlg==",
   "success": true,
-  "projectFilePath": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj",
+  "projectFilePath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\Repos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

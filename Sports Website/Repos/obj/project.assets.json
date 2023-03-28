@@ -3470,11 +3470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj",
+      "projectUniqueName": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\Repos.csproj",
       "projectName": "Repos",
-      "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\Repos.csproj",
+      "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\Repos.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Repos\\obj\\",
+      "outputPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3491,11 +3491,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj": {
-              "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Data Context\\Data Context.csproj"
+            "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Data Context\\Data Context.csproj": {
+              "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Data Context\\Data Context.csproj"
             },
-            "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj": {
-              "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj"
+            "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\Models.csproj": {
+              "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\Models.csproj"
             }
           }
         }

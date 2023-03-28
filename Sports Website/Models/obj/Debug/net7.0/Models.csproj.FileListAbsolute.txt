@@ -10,3 +10,15 @@ F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net7.0\Models.dll
 F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net7.0\refint\Models.dll
 F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net7.0\Models.pdb
 F:\tech tech\SimpleSports\Sports Website\Models\obj\Debug\net7.0\ref\Models.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\bin\Debug\net7.0\Models.deps.json
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\bin\Debug\net7.0\Models.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\bin\Debug\net7.0\Models.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.csproj.AssemblyReference.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.AssemblyInfoInputs.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.AssemblyInfo.cs
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.csproj.CoreCompileInputs.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\refint\Models.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\Models.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Models\obj\Debug\net7.0\ref\Models.dll

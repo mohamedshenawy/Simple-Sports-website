@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E0V+6G6O6+wgYGB6plRbF6lloOPDMl/W5saEBWJKJMvgEZVpK/ZiU5nbbIAWlWwqWeFHH4gEN4JSiuQpgXKaFQ==",
+  "dgSpecHash": "Kx6UUzz9G/cH2RQutB4WVjHL44ai8MnJQdlsaDlt/cziBgZs29STU67USs1Rsd/PM5RQ2WvLoqgOmGocTMIqVQ==",
   "success": true,
-  "projectFilePath": "F:\\tech tech\\SimpleSports\\Sports Website\\ViewModels\\ViewModels.csproj",
+  "projectFilePath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\ViewModels\\ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",

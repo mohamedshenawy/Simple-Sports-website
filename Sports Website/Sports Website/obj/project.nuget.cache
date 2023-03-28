@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XYjsSVedirBGF21TV3a27VknQeROx2Ga6pYUeCoYoLwBHU0OXfC32t+uosTqPx+VDwCzXim9MTT1hVkpG2t/PA==",
+  "dgSpecHash": "XpAtd+0u6pXyd0o4EbBms9sTQQ0wp8i3FpnAXneq3rq6mJmjT0Sm7AFajRIaFrazC99fHmyP/Vndrt4GjgyEJA==",
   "success": true,
-  "projectFilePath": "F:\\tech tech\\SimpleSports\\Sports Website\\Sports Website\\Sports Website Admin.csproj",
+  "projectFilePath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Sports Website\\Sports Website Admin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

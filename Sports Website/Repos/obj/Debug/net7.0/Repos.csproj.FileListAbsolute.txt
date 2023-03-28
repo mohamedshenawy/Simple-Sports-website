@@ -15,3 +15,20 @@ F:\tech tech\SimpleSports\Sports Website\Repos\obj\Debug\net7.0\Repos.dll
 F:\tech tech\SimpleSports\Sports Website\Repos\obj\Debug\net7.0\refint\Repos.dll
 F:\tech tech\SimpleSports\Sports Website\Repos\obj\Debug\net7.0\Repos.pdb
 F:\tech tech\SimpleSports\Sports Website\Repos\obj\Debug\net7.0\ref\Repos.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Repos.deps.json
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Repos.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Repos.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Data Context.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Models.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Data Context.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\bin\Debug\net7.0\Models.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.csproj.AssemblyReference.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.AssemblyInfoInputs.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.AssemblyInfo.cs
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.csproj.CoreCompileInputs.cache
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.csproj.CopyComplete
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\refint\Repos.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\Repos.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Repos\obj\Debug\net7.0\ref\Repos.dll

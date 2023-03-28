@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj",
+      "projectUniqueName": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\Models.csproj",
+      "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\tech tech\\SimpleSports\\Sports Website\\Models\\obj\\",
+      "outputPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
