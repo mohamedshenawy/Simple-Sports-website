@@ -12,7 +12,8 @@
           "Microsoft.IdentityModel.Tokens": "6.27.0",
           "Repos": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0",
-          "System.IdentityModel.Tokens.Jwt": "6.27.0"
+          "System.IdentityModel.Tokens.Jwt": "6.27.0",
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "Api Clinet side.dll": {}
@@ -703,6 +704,15 @@
         "runtime": {
           "Repos.dll": {}
         }
+      },
+      "ViewModels/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "ViewModels.dll": {}
+        }
       }
     }
   },
@@ -1248,6 +1258,11 @@
       "sha512": ""
     },
     "Repos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

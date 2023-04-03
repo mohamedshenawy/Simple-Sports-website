@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Data Context\Data Context.csproj" />
     <ProjectReference Include="..\Repos\Repos.csproj" />
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

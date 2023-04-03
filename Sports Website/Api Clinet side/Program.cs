@@ -1,12 +1,14 @@
 using Data_Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
 using Repos;
 using System.Text;
@@ -18,6 +20,13 @@ bulider.Services.AddControllers();
 bulider.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api_Clinet_side", Version = "v1" });
+    c.AddSecurityDefinition("token", new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.ApiKey,
+        In = ParameterLocation.Header,
+        Name = HeaderNames.Authorization,
+        Scheme = "Bearer"
+    });
 });
 
 bulider.Services.AddDbContext<Context>(options =>
@@ -26,6 +35,8 @@ bulider.Services.AddDbContext<Context>(options =>
 
 });
 
+bulider.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<Context>()
+    .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>(TokenOptions.DefaultProvider);
 bulider.Services.AddScoped<DbContext, Context>();
 bulider.Services.AddScoped(typeof(IModelRepo<>), typeof(ModelRepo<>));
 bulider.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));

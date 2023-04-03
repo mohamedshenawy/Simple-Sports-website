@@ -1289,6 +1289,20 @@
         "runtime": {
           "bin/placeholder/Repos.dll": {}
         }
+      },
+      "ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModels.dll": {}
+        }
       }
     }
   },
@@ -3928,6 +3942,11 @@
       "type": "project",
       "path": "../Repos/Repos.csproj",
       "msbuildProject": "../Repos/Repos.csproj"
+    },
+    "ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ViewModels/ViewModels.csproj",
+      "msbuildProject": "../ViewModels/ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3937,7 +3956,8 @@
       "Microsoft.IdentityModel.Tokens >= 6.27.0",
       "Repos >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0",
-      "System.IdentityModel.Tokens.Jwt >= 6.27.0"
+      "System.IdentityModel.Tokens.Jwt >= 6.27.0",
+      "ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3972,6 +3992,9 @@
             },
             "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\Repos.csproj": {
               "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\Repos.csproj"
+            },
+            "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\ViewModels\\ViewModels.csproj"
             }
           }
         }

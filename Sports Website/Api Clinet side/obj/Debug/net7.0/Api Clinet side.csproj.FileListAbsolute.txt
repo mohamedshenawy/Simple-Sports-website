@@ -80,3 +80,5 @@ D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\obj\Debug\
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\obj\Debug\net7.0\Api Clinet side.genruntimeconfig.cache
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\obj\Debug\net7.0\ref\Api Clinet side.dll
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\ViewModels.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\ViewModels.pdb
