@@ -25,7 +25,22 @@ bulider.Services.AddSwaggerGen(c =>
         Type = SecuritySchemeType.ApiKey,
         In = ParameterLocation.Header,
         Name = HeaderNames.Authorization,
+        BearerFormat = "JWT",
         Scheme = "Bearer"
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                { 
+                    Type = ReferenceType.SecurityScheme , 
+                    Id = "Baerer"
+                }
+            },
+            new string[] { }
+        }
     });
 });
 
@@ -49,7 +64,13 @@ bulider.Services.AddCors(options => options.AddPolicy("Cors",
    }));
 
 // Start Configration of JWT
-bulider.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//bulider.Services.AddJWTTokenServices(bulider.Configuration);
+bulider.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
     .AddJwtBearer(opt =>
     {
         opt.RequireHttpsMetadata = false;
@@ -58,6 +79,7 @@ bulider.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             ValidateIssuer = true,
             ValidateAudience = true,
+            ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
             ValidIssuer = bulider.Configuration.GetValue<string>("jwt:Issuer"),
             ValidAudience = bulider.Configuration.GetValue<string>("jwt:Audience"),
@@ -77,16 +99,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("Cors");
+app.UseRouting();
 
 app.UseAuthentication();
 
 app.UseAuthorization();
-app.UseRouting();
 
-//app.UseAuthorization();
-//app.UseCors("Cors");
-app.UseCors("Cors");
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
@@ -95,31 +114,3 @@ app.UseEndpoints(endpoints =>
 app.Run();
 
 
-#region .NET 5
-//using Microsoft.AspNetCore.Hosting;
-//using Microsoft.Extensions.Configuration;
-//using Microsoft.Extensions.Hosting;
-//using Microsoft.Extensions.Logging;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Threading.Tasks;
-
-//namespace Api_Clinet_side
-//{
-//    public class Program
-//    {
-//        public static void Main(string[] args)
-//        {
-//            CreateHostBuilder(args).Build().Run();
-//        }
-
-//        public static IHostBuilder CreateHostBuilder(string[] args) =>
-//            Host.CreateDefaultBuilder(args)
-//                .ConfigureWebHostDefaults(webBuilder =>
-//                {
-//                    webBuilder.UseStartup<Startup>();
-//                });
-//    }
-//}
-#endregion

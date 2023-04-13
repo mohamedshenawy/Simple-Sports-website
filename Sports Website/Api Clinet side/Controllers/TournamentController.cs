@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Api_Clinet_side.Controllers
 {
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize]
     public class TournamentController : ControllerBase
     {
 

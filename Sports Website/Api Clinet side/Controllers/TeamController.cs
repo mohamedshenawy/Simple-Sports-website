@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 using Repos;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Api_Clinet_side.Controllers
 {
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class TeamController : ControllerBase
