@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/r3KH6fGWcvzmIIdj3rrMTxf0etCLnXcV8K5okcehDU=",
+  "Hash": "1Bl4Te72e0LM7J8ETC2MjJlvifAqncJ3PJ2GfbSRlQ8=",
   "Source": "Sports Website Admin",
   "BasePath": "_content/Sports Website Admin",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\images\\348c9201-2e99-4fb4-b4cb-73a13047f677download (1).png"
+    },
+    {
+      "Identity": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Sports Website\\wwwroot\\Files\\images\\3745d251-1d33-4ef0-99aa-9200c9891bce2lpy.jpg",
+      "SourceId": "Sports Website Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Sports Website\\wwwroot\\",
+      "BasePath": "_content/Sports Website Admin",
+      "RelativePath": "Files/images/3745d251-1d33-4ef0-99aa-9200c9891bce2lpy.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\images\\3745d251-1d33-4ef0-99aa-9200c9891bce2lpy.jpg"
     },
     {
       "Identity": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Sports Website\\wwwroot\\Files\\images\\4e78e4ce-3cf6-47e8-aa24-a1c0fb5028a5Liverpool_FC.svg.png",

@@ -11,6 +11,9 @@ using Repos;
 using System;
 using System.IO;
 using ViewModels;
+using Microsoft.AspNetCore.Authentication.Facebook;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 
 var bulider = WebApplication.CreateBuilder(args);
 bulider.Services.AddControllersWithViews();
@@ -26,7 +29,26 @@ bulider.Services.AddScoped(typeof(IModelRepo<>), typeof(ModelRepo<>));
 bulider.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
 bulider.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<Context>()
     .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>(TokenOptions.DefaultProvider);
-bulider.Services.AddAuthorization();
+
+// start login with google and facebook
+bulider.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+})
+    .AddCookie()
+    .AddFacebook(options =>
+    {
+        options.AppId = "257761656647430";
+        options.AppSecret = "5b88b86ebf726555b7583ae623671f8f";
+    });
+//.AddGoogle(options =>
+// {
+//     options.ClientId = "your-client-id";
+//     options.ClientSecret = "your-client-secret";
+// })
+
+// end login with google and facebook
 
 bulider.Services.ConfigureApplicationCookie(op =>
 {
@@ -34,9 +56,12 @@ bulider.Services.ConfigureApplicationCookie(op =>
     op.ExpireTimeSpan = TimeSpan.FromDays(1);
     op.SlidingExpiration = true;
 });
-                
+
+
+
 
 var app = bulider.Build();
+
 
 if (!app.Environment.IsDevelopment())
 {
@@ -45,7 +70,7 @@ if (!app.Environment.IsDevelopment())
 }
 app.Environment.ContentRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 app.UseStaticFiles();
-app.UseCors(opt=>opt.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+app.UseCors(opt => opt.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

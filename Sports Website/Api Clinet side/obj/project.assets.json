@@ -46,6 +46,181 @@
           }
         }
       },
+      "DotNetOpenAuth.AspNet/4.1.4.12333": {
+        "type": "package",
+        "dependencies": {
+          "DotNetOpenAuth.OAuth.Consumer": "[4.1.4.12333]",
+          "DotNetOpenAuth.OpenId.RelyingParty": "[4.1.4.12333]"
+        },
+        "compile": {
+          "lib/net45-full/DotNetOpenAuth.AspNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.AspNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DotNetOpenAuth.Core/4.1.4.12333": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "(, )"
+        },
+        "compile": {
+          "lib/net45-full/DotNetOpenAuth.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DotNetOpenAuth.OAuth.Consumer/4.1.4.12333": {
+        "type": "package",
+        "dependencies": {
+          "DotNetOpenAuth.OAuth.Core": "[4.1.4.12333]"
+        },
+        "compile": {
+          "lib/net45-full/DotNetOpenAuth.OAuth.Consumer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.OAuth.Consumer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DotNetOpenAuth.OAuth.Core/4.1.4.12333": {
+        "type": "package",
+        "dependencies": {
+          "DotNetOpenAuth.Core": "[4.1.4.12333]"
+        },
+        "compile": {
+          "lib/net45-full/DotNetOpenAuth.OAuth.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.OAuth.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DotNetOpenAuth.OpenId.Core/4.1.4.12333": {
+        "type": "package",
+        "dependencies": {
+          "DotNetOpenAuth.Core": "[4.1.4.12333]"
+        },
+        "compile": {
+          "lib/net45-full/DotNetOpenAuth.OpenId.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.OpenId.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DotNetOpenAuth.OpenId.RelyingParty/4.1.4.12333": {
+        "type": "package",
+        "dependencies": {
+          "DotNetOpenAuth.OpenId.Core": "[4.1.4.12333]"
+        },
+        "compile": {
+          "lib/net45-full/DotNetOpenAuth.OpenId.RelyingParty.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.OpenId.RelyingParty.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages.Data/3.2.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WebMatrix.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages.OAuth/3.2.9": {
+        "type": "package",
+        "dependencies": {
+          "DotNetOpenAuth.AspNet": "4.1.4.12333",
+          "Microsoft.AspNet.WebPages.WebData": "[3.2.9, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Web.WebPages.OAuth.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Web.WebPages.OAuth.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages.WebData/3.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebPages.Data": "3.2.9"
+        },
+        "compile": {
+          "lib/net45/WebMatrix.WebData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.WebData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/7.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.Authentication.Google/7.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.4": {
         "type": "package",
         "dependencies": {
@@ -637,6 +812,25 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Net.Http/2.0.20505": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Net.Http.WebRequest.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Net.Http.dll": {
+            "related": ".WebRequest.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/System.Net.Http.WebRequest.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Net.Http.dll": {
+            "related": ".WebRequest.xml;.xml"
           }
         }
       },
@@ -1343,6 +1537,199 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "DotNetOpenAuth.AspNet/4.1.4.12333": {
+      "sha512": "IpmxJw3z75OPfzZALiYdo0PXQJL3ziYd03FZtJuDUMMjBFRDH5c+qeo4mLp5piUVnXUCvrsUY2UUH5qR2W5XGA==",
+      "type": "package",
+      "path": "dotnetopenauth.aspnet/4.1.4.12333",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetopenauth.aspnet.4.1.4.12333.nupkg.sha512",
+        "dotnetopenauth.aspnet.nuspec",
+        "lib/net40-full/DotNetOpenAuth.AspNet.dll",
+        "lib/net40-full/DotNetOpenAuth.AspNet.xml",
+        "lib/net45-full/DotNetOpenAuth.AspNet.dll",
+        "lib/net45-full/DotNetOpenAuth.AspNet.xml"
+      ]
+    },
+    "DotNetOpenAuth.Core/4.1.4.12333": {
+      "sha512": "oKfibj/LOXGJM5vwKwdLCM1pMCgipMVTrMAQvrWp0gK2ZRzB+BxgQ6/no66PWphM6q1XpI9QgY/PgpHL3M1rxA==",
+      "type": "package",
+      "path": "dotnetopenauth.core/4.1.4.12333",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/web.config.transform",
+        "dotnetopenauth.core.4.1.4.12333.nupkg.sha512",
+        "dotnetopenauth.core.nuspec",
+        "lib/net35-full/DotNetOpenAuth.Core.dll",
+        "lib/net35-full/DotNetOpenAuth.Core.xml",
+        "lib/net40-full/DotNetOpenAuth.Core.dll",
+        "lib/net40-full/DotNetOpenAuth.Core.xml",
+        "lib/net45-full/DotNetOpenAuth.Core.dll",
+        "lib/net45-full/DotNetOpenAuth.Core.xml"
+      ]
+    },
+    "DotNetOpenAuth.OAuth.Consumer/4.1.4.12333": {
+      "sha512": "i+YbFa382dB4T/A+MJbEvAO4WhHQ9UanmYQKSf/PyBfJ4NzLdqEn1LG/+DWCdoh6rIftM6GVAsOlUDWb6u+Uzw==",
+      "type": "package",
+      "path": "dotnetopenauth.oauth.consumer/4.1.4.12333",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetopenauth.oauth.consumer.4.1.4.12333.nupkg.sha512",
+        "dotnetopenauth.oauth.consumer.nuspec",
+        "lib/net35-full/DotNetOpenAuth.OAuth.Consumer.dll",
+        "lib/net35-full/DotNetOpenAuth.OAuth.Consumer.xml",
+        "lib/net40-full/DotNetOpenAuth.OAuth.Consumer.dll",
+        "lib/net40-full/DotNetOpenAuth.OAuth.Consumer.xml",
+        "lib/net45-full/DotNetOpenAuth.OAuth.Consumer.dll",
+        "lib/net45-full/DotNetOpenAuth.OAuth.Consumer.xml"
+      ]
+    },
+    "DotNetOpenAuth.OAuth.Core/4.1.4.12333": {
+      "sha512": "zR23BgdPXasILk83QF+izLwFlGErBwd8TaePKh4gyfanYpjtolqNzJra73h08En4VKMegsmjWR0cq97HioX+qA==",
+      "type": "package",
+      "path": "dotnetopenauth.oauth.core/4.1.4.12333",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/web.config.transform",
+        "dotnetopenauth.oauth.core.4.1.4.12333.nupkg.sha512",
+        "dotnetopenauth.oauth.core.nuspec",
+        "lib/net35-full/DotNetOpenAuth.OAuth.dll",
+        "lib/net35-full/DotNetOpenAuth.OAuth.xml",
+        "lib/net40-full/DotNetOpenAuth.OAuth.dll",
+        "lib/net40-full/DotNetOpenAuth.OAuth.xml",
+        "lib/net45-full/DotNetOpenAuth.OAuth.dll",
+        "lib/net45-full/DotNetOpenAuth.OAuth.xml"
+      ]
+    },
+    "DotNetOpenAuth.OpenId.Core/4.1.4.12333": {
+      "sha512": "krN3D1u7cyLcOBkdWOTuxOVbwsXXbpiKuk+2LgJHLIra9883l+kLUkuBDTs+SLZWpCixZUaAv240/PtqOk5QVg==",
+      "type": "package",
+      "path": "dotnetopenauth.openid.core/4.1.4.12333",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net35-full/web.config.transform",
+        "content/net40-full/web.config.transform",
+        "content/net45-full/web.config.transform",
+        "dotnetopenauth.openid.core.4.1.4.12333.nupkg.sha512",
+        "dotnetopenauth.openid.core.nuspec",
+        "lib/net35-full/DotNetOpenAuth.OpenId.dll",
+        "lib/net35-full/DotNetOpenAuth.OpenId.xml",
+        "lib/net35-full/Mono.Math.dll",
+        "lib/net35-full/Mono.Math.xml",
+        "lib/net35-full/Org.Mentalis.Security.Cryptography.dll",
+        "lib/net35-full/Org.Mentalis.Security.Cryptography.xml",
+        "lib/net40-full/DotNetOpenAuth.OpenId.dll",
+        "lib/net40-full/DotNetOpenAuth.OpenId.xml",
+        "lib/net40-full/Mono.Math.dll",
+        "lib/net40-full/Mono.Math.xml",
+        "lib/net40-full/Org.Mentalis.Security.Cryptography.dll",
+        "lib/net40-full/Org.Mentalis.Security.Cryptography.xml",
+        "lib/net45-full/DotNetOpenAuth.OpenId.dll",
+        "lib/net45-full/DotNetOpenAuth.OpenId.xml",
+        "lib/net45-full/Mono.Math.dll",
+        "lib/net45-full/Mono.Math.xml",
+        "lib/net45-full/Org.Mentalis.Security.Cryptography.dll",
+        "lib/net45-full/Org.Mentalis.Security.Cryptography.xml"
+      ]
+    },
+    "DotNetOpenAuth.OpenId.RelyingParty/4.1.4.12333": {
+      "sha512": "Cy7dOO2hffxf9Lql3C1RkaXu8ZjgqqKcOBf/vhrxnW0oOwGVc7VI80UfK2pZg2+KgJNs8GcJOf0wiqN+23MY3g==",
+      "type": "package",
+      "path": "dotnetopenauth.openid.relyingparty/4.1.4.12333",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/web.config.transform",
+        "dotnetopenauth.openid.relyingparty.4.1.4.12333.nupkg.sha512",
+        "dotnetopenauth.openid.relyingparty.nuspec",
+        "lib/net35-full/DotNetOpenAuth.OpenId.RelyingParty.dll",
+        "lib/net35-full/DotNetOpenAuth.OpenId.RelyingParty.xml",
+        "lib/net40-full/DotNetOpenAuth.OpenId.RelyingParty.dll",
+        "lib/net40-full/DotNetOpenAuth.OpenId.RelyingParty.xml",
+        "lib/net45-full/DotNetOpenAuth.OpenId.RelyingParty.dll",
+        "lib/net45-full/DotNetOpenAuth.OpenId.RelyingParty.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebPages.Data/3.2.9": {
+      "sha512": "D6QnqWJ+d8Xr+M957eEECnY7gUPJmR+FLfn+L0hoCWrXQjNNmMnxGt8IVqXQAPlWJaJjrq6Kwh+9Eu3NvtxZMA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages.data/3.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/WebMatrix.Data.dll",
+        "lib/net45/WebMatrix.Data.xml",
+        "microsoft.aspnet.webpages.data.3.2.9.nupkg.sha512",
+        "microsoft.aspnet.webpages.data.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages.OAuth/3.2.9": {
+      "sha512": "11ATQ8KMCun3hNahMQ0pbRbgO+C+0nPGW4FnLu19pEyUIMjGRETdCPvLmzZtUR660JFYuqyR0EVVofCXrFWqYg==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages.oauth/3.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/Microsoft.Web.WebPages.OAuth.dll",
+        "lib/net45/Microsoft.Web.WebPages.OAuth.xml",
+        "microsoft.aspnet.webpages.oauth.3.2.9.nupkg.sha512",
+        "microsoft.aspnet.webpages.oauth.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages.WebData/3.2.9": {
+      "sha512": "Rrwovp6Ue75a3CckDF70NoEvURCW/Hjlqrn1BhRmPX8mNrAPyQFmve9+xYEopdo/cjRd65w7tkklpD9XCftBBg==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages.webdata/3.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/WebMatrix.WebData.dll",
+        "lib/net45/WebMatrix.WebData.xml",
+        "microsoft.aspnet.webpages.webdata.3.2.9.nupkg.sha512",
+        "microsoft.aspnet.webpages.webdata.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/7.0.5": {
+      "sha512": "OnSgITl3N8v8A447zrWqyoeqoYLxcY3ixVTKf1a5h+QpmZUujH/gvJRETHaUIVlk3b64MlzbkdAG/JsHpVjlpw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.facebook/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.xml",
+        "microsoft.aspnetcore.authentication.facebook.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.facebook.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.5": {
+      "sha512": "W7GAE+Gor29canssOYuZzTHOPsPX1FjYLlOoqWRA9fw7Hk7JSBo9n682LngXokvICzWKzV0MIuUa+izLmk/VmA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.4": {
@@ -2409,6 +2796,21 @@
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
         "microsoft.identitymodel.tokens.6.27.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.Net.Http/2.0.20505": {
+      "sha512": "XRsKQP2XEd/DGLerVsU+T2pKQGTFc9ctWsIVbRblL/y+jT/BUo28aJ5mWN40oAeUwwbpXshAc8uO/LRscWav9A==",
+      "type": "package",
+      "path": "microsoft.net.http/2.0.20505",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "microsoft.net.http.2.0.20505.nupkg.sha512",
+        "microsoft.net.http.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
@@ -3952,6 +4354,9 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Data Context >= 1.0.0",
+      "Microsoft.AspNet.WebPages.OAuth >= 3.2.9",
+      "Microsoft.AspNetCore.Authentication.Facebook >= 7.0.5",
+      "Microsoft.AspNetCore.Authentication.Google >= 7.0.5",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.4",
       "Microsoft.IdentityModel.Tokens >= 6.27.0",
       "Repos >= 1.0.0",
@@ -4009,6 +4414,18 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.AspNet.WebPages.OAuth": {
+            "target": "Package",
+            "version": "[3.2.9, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Facebook": {
+            "target": "Package",
+            "version": "[7.0.5, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[7.0.5, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[7.0.4, )"
@@ -4048,5 +4465,117 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1602",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DotNetOpenAuth.Core 4.1.4.12333 does not provide an inclusive lower bound for dependency Microsoft.Net.Http. An approximate best match of Microsoft.Net.Http 2.0.20505 was resolved.",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.AspNet 4.1.4.12333' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.AspNet",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.Core 4.1.4.12333' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.Core",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.OAuth.Consumer 4.1.4.12333' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.OAuth.Consumer",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.OAuth.Core 4.1.4.12333' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.OAuth.Core",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.OpenId.Core 4.1.4.12333' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.OpenId.Core",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.OpenId.RelyingParty 4.1.4.12333' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.OpenId.RelyingParty",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebPages.Data 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebPages.Data",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebPages.OAuth 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebPages.OAuth",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebPages.WebData 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebPages.WebData",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Net.Http 2.0.20505' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

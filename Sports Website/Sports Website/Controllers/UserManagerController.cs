@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ViewModels;
+using Microsoft.AspNetCore.Authentication.Facebook;
+using System.Security.Claims;
 
 namespace Sports_Website.Controllers
 {
@@ -152,6 +156,68 @@ namespace Sports_Website.Controllers
             {
                 return BadRequest(e.Message);
             }
+        }
+
+        //[HttpGet("signin-google")]
+        //public IActionResult SignInWithGoogle()
+        //{
+        //    var properties = new AuthenticationProperties { RedirectUri = "/signin-google-callback" };
+        //    return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        //}
+        //[HttpGet("signin-google-callback")]
+        //public async Task<IActionResult> SignInWithGoogleCallback()
+        //{
+        //    var result = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+        //    // TODO: Handle the authentication result
+        //    return View();
+        //}
+
+        //[HttpGet("signin-facebook")]
+        public IActionResult SignInWithFacebook()
+        {
+            var properties = new AuthenticationProperties { RedirectUri = "/UserManager/SignInWithFacebookCallback" };
+            return Challenge(properties, FacebookDefaults.AuthenticationScheme);
+        }
+
+        //[HttpGet("signin-facebook-callback")]
+        public async Task<IActionResult> SignInWithFacebookCallback()
+        {
+            var result = await HttpContext.AuthenticateAsync(FacebookDefaults.AuthenticationScheme);
+            // TODO: Handle the authentication result
+            var email = result.Principal.FindFirstValue(ClaimTypes.Email);
+            var facebookId = result.Principal.FindFirstValue(ClaimTypes.NameIdentifier);
+            var existingUser = await _userManager.FindByEmailAsync(email);
+            if (existingUser == null)
+            {
+                // User does not exist, create a new user
+                var newUser = new IdentityUser
+                {
+                    UserName = email,
+                    Email = email,
+                    //FacebookId = facebookId // Optionally, store the Facebook ID in your user model
+                                            // Set other properties as needed
+                };
+
+                // Create the new user in the database
+                var createResult = await _userManager.CreateAsync(newUser);
+                if (createResult.Succeeded)
+                {
+                    // User creation successful
+                    // Perform any additional actions or redirect the user to the desired page
+                }
+                else
+                {
+                    // User creation failed
+                    // Handle the error and display appropriate feedback to the user
+                }
+            }
+            else
+            {
+                // User already exists, perform any additional actions or redirect the user to the desired page
+            }
+
+
+            return View();
         }
 
     }

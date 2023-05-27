@@ -576,3 +576,15 @@ D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\obj\Debug\n
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\obj\Debug\net7.0\Sports Website Admin.pdb
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\obj\Debug\net7.0\Sports Website Admin.genruntimeconfig.cache
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\obj\Debug\net7.0\ref\Sports Website Admin.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\DotNetOpenAuth.AspNet.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\DotNetOpenAuth.Core.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\DotNetOpenAuth.OAuth.Consumer.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\DotNetOpenAuth.OAuth.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\DotNetOpenAuth.OpenId.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\WebMatrix.Data.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\Microsoft.Web.WebPages.OAuth.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\WebMatrix.WebData.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Sports Website\bin\Debug\net7.0\System.Net.Http.WebRequest.dll

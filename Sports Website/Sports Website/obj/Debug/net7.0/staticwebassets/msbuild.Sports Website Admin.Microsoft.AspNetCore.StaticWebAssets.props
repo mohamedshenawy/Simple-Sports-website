@@ -80,6 +80,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\images\348c9201-2e99-4fb4-b4cb-73a13047f677download (1).png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\images\3745d251-1d33-4ef0-99aa-9200c9891bce2lpy.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Sports Website Admin</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Sports Website Admin</BasePath>
+      <RelativePath>Files/images/3745d251-1d33-4ef0-99aa-9200c9891bce2lpy.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\images\3745d251-1d33-4ef0-99aa-9200c9891bce2lpy.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\images\4e78e4ce-3cf6-47e8-aa24-a1c0fb5028a5Liverpool_FC.svg.png))">
       <SourceType>Package</SourceType>
       <SourceId>Sports Website Admin</SourceId>

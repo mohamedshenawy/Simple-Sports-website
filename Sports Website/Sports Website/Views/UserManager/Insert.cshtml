@@ -21,6 +21,7 @@
         <span id="Confirm-PasswordValidation"></span>
     </div>
     <button type="submit" class="btn btn-primary" onclick="signUp()">Submit</button>
-
+    @Html.ActionLink("face book login" , "SignInWithFacebook" ,"UserManager" , new {@class="fa-brands fa-square-facebook"})
+    @*@Html.ActionLink("" , "SignInWithGoogle" ,"UserManager" , new {@class="fa-brands fa-google"})*@
 </div>
 <script src="@Url.Content("~/js/SignUp.js")"></script>
