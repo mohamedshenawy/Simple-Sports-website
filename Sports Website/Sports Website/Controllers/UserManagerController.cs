@@ -13,16 +13,17 @@ using System.Threading.Tasks;
 using ViewModels;
 using Microsoft.AspNetCore.Authentication.Facebook;
 using System.Security.Claims;
+using Models;
 
 namespace Sports_Website.Controllers
 {
     [Authorize(Roles= "super admin")]
     public class UserManagerController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IMapper _mapper;
-        public UserManagerController(UserManager<IdentityUser> userManager , RoleManager<IdentityRole> roleManager , IMapper mapper)
+        public UserManagerController(UserManager<User> userManager , RoleManager<IdentityRole> roleManager , IMapper mapper)
         {
             _userManager= userManager;
             _roleManager = roleManager;
@@ -35,7 +36,7 @@ namespace Sports_Website.Controllers
         {
             try
             {
-                List<IdentityUser> users = await _userManager.Users.ToListAsync();
+                List<User> users = await _userManager.Users.ToListAsync();
                 return View(users);
 
             }catch(Exception e)
@@ -59,8 +60,8 @@ namespace Sports_Website.Controllers
                     return BadRequest(ModelState);
 
                 //sign up with identity 
-                IdentityUser newUser = new IdentityUser();
-                newUser = _mapper.Map<IdentityUser>(model);
+                User newUser = new User();
+                newUser = _mapper.Map<User>(model);
                 var result = await _userManager.CreateAsync(newUser, model.Password);
 
                 if (!result.Succeeded)
@@ -190,11 +191,11 @@ namespace Sports_Website.Controllers
             if (existingUser == null)
             {
                 // User does not exist, create a new user
-                var newUser = new IdentityUser
+                var newUser = new User
                 {
                     UserName = email,
                     Email = email,
-                    //FacebookId = facebookId // Optionally, store the Facebook ID in your user model
+                    FacebookId = facebookId // Optionally, store the Facebook ID in your user model
                                             // Set other properties as needed
                 };
 
@@ -217,7 +218,7 @@ namespace Sports_Website.Controllers
             }
 
 
-            return View();
+            return RedirectToAction(nameof(Index));
         }
 
     }

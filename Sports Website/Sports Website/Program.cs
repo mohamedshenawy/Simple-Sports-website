@@ -14,6 +14,7 @@ using ViewModels;
 using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Models;
 
 var bulider = WebApplication.CreateBuilder(args);
 bulider.Services.AddControllersWithViews();
@@ -27,8 +28,8 @@ bulider.Services.AddAutoMapper(typeof(Program));
 bulider.Services.AddScoped<DbContext, Context>();
 bulider.Services.AddScoped(typeof(IModelRepo<>), typeof(ModelRepo<>));
 bulider.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
-bulider.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<Context>()
-    .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>(TokenOptions.DefaultProvider);
+bulider.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<Context>()
+    .AddTokenProvider<DataProtectorTokenProvider<User>>(TokenOptions.DefaultProvider);
 
 // start login with google and facebook
 bulider.Services.AddAuthentication(options =>

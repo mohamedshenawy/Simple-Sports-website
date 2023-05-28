@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity;
-@model List<IdentityUser>
-@inject UserManager<IdentityUser> _userManager
+@using Models;
+@model List<User>
+@inject UserManager<User> _userManager
 @{
     ViewData["Title"] = "User Manager";
 }

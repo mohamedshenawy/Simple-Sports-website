@@ -82,3 +82,15 @@ D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\obj\Debug\
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\ViewModels.dll
 D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\ViewModels.pdb
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\DotNetOpenAuth.AspNet.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\DotNetOpenAuth.Core.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\DotNetOpenAuth.OAuth.Consumer.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\DotNetOpenAuth.OAuth.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\DotNetOpenAuth.OpenId.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\WebMatrix.Data.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\Microsoft.Web.WebPages.OAuth.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\WebMatrix.WebData.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\MyCodingSpace\Simple-Sports-website\Sports Website\Api Clinet side\bin\Debug\net7.0\System.Net.Http.WebRequest.dll

@@ -5,7 +5,7 @@ using System;
 
 namespace Data_Context
 {
-    public class Context:IdentityDbContext
+    public class Context:IdentityDbContext<User>
     {
         public Context(DbContextOptions<Context> options) : base(options)
         { }
