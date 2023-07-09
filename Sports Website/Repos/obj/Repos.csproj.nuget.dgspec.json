@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
         "outputPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Data Context\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.devexpress.com/zFlBZjgpTyL3qd7AWwJIER1AxKgSkvCle9Df7j5h8siDICWyfu/api": {}
         },
         "frameworks": {
           "net7.0": {
@@ -94,8 +98,12 @@
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
         "outputPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +111,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.devexpress.com/zFlBZjgpTyL3qd7AWwJIER1AxKgSkvCle9Df7j5h8siDICWyfu/api": {}
         },
         "frameworks": {
           "net7.0": {
@@ -155,8 +163,12 @@
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
         "outputPath": "D:\\MyCodingSpace\\Simple-Sports-website\\Sports Website\\Repos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,7 +176,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.devexpress.com/zFlBZjgpTyL3qd7AWwJIER1AxKgSkvCle9Df7j5h8siDICWyfu/api": {}
         },
         "frameworks": {
           "net7.0": {
