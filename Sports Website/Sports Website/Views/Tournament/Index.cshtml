@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using Models
+@model List<Tournaments>
+
+<div class="col-lg-12 grid-margin stretch-card w-100">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Tournaments</h4>
+            @*<p class="card-description">
+                Add class <code>.table-striped</code>
+            </p>*@
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Logo
+                            </th>
+                            <th>
+                                Tournamet name
+                            </th>
+                            <th>
+                                About
+                            </th>
+                            <th>
+                                Edit/Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         @{int i = 1;}
+                         @foreach (var tournament in Model)
+                        {
+                        <tr>
+                                <td>
+                                    @i
+
+                                    @{
+                                        i++;
+                                    }
+                                </td>
+                            <td class="py-1">
+                                    <img src="~/Files/images/@tournament.LogoUrl" alt="image" />
+                            </td>
+                            <td>
+                                @tournament.Name
+                            </td>
+                                <td>
+                                    @tournament.Description
+                                </td>
+                            <td>
+
+                                    @*<button type="button" class="btn btn-secondary btn-rounded btn-fw">Secondary</button>*@
+
+                                    @Html.ActionLink("Edit", "Edit", "Home", routeValues: new { @tournamentID = tournament.ID }, new { @class = "btn btn-secondary btn-rounded btn-fw" })
+                                    @Html.ActionLink("Delete", "Delete", "Home", routeValues: new { @tournamentID = tournament.ID }, new { @class = "btn btn-danger btn-rounded btn-fw" })
+                                    @*<button type="button" class="btn btn-danger btn-rounded btn-fw">Danger</button>*@
+                            </td>
+                        </tr>
+                                    
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

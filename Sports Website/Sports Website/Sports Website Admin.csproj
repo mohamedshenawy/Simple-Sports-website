@@ -28,6 +28,13 @@
   <ItemGroup>
     <Folder Include="wwwroot\Files\images\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Tournament\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
 	
 	
 

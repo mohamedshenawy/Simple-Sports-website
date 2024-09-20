@@ -24,20 +24,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Home/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Home/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Roles/Index.cshtml]
@@ -50,6 +38,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Shared/Partials/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Shared/Partials/_settings-panel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9zZXR0aW5ncy1wYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Shared/Partials/_sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9zaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Shared/Partials/_userDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF91c2VyRHJvcGRvd24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Shared/_Layout.cshtml]
@@ -70,6 +74,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Team/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Tournament/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Tournament/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Tournament/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/Tournament/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/MyCodingSpace/Simple-Sports-website/Sports Website/Sports Website/Views/UserManager/Index.cshtml]
